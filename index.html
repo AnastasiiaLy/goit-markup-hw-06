@@ -374,10 +374,18 @@
 							</li>
 						</ul>
 					</div>
+					<div class="subscription-btn">
+						<b class="subscribe">Subscribe</b>
+						<form class="footer-submit-form">
+							<input type="mail" class="submit-form-input" name="user-email " placeholder="E-mail" />
+							<button type="submit" class="submit-form-btn"> Subscribe </button>
+						</form>
+					</div>
 				</div>
 			</div>
 		</footer>
-		<div class="backdrop" data-modal>
+
+		<div class="backdrop is-hidden" data-modal>
 			<div class="modal">
 				<button type="button" class="modal-close-btn" data-modal-close>
 					<svg class="modal-close-btn-icon" width="8px" height="8px">
@@ -385,8 +393,9 @@
 					</svg>
 				</button>
 
+				<p class="appeal">Leave your contacts and we will call you back</p>
+
 				<form class="modal-form">
-					<p class="appeal">Leave your contacts and we will call you back</p>
 					<label class="modal-form-filed">
 						<span class="modal-form-input-desc">Name</span>
 						<span class="modal-form-input-wrapper">
@@ -442,7 +451,7 @@
 								<use href="./images/icons.svg#icon-agreed-icon"></use>
 							</svg>
 						</span>
-						I accept the terms and conditions of the <a href="#">Privacy Policy</a>
+						I accept the terms and conditions of the&nbsp; <a href="#" class="link">Privacy Policy</a>
 					</label>
 					<button class="modal-form-submit" type="submit">Send</button>
 				</form>
