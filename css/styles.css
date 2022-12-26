@@ -793,7 +793,7 @@ body {
 	letter-spacing: 0.01em;
 	color: rgba(117, 117, 117, 0.5);
 }
-.modal-form-check-desc::before {
+/* .modal-form-check-desc::before {
 	display: block;
 	width: 16px;
 	height: 16px;
@@ -801,15 +801,39 @@ body {
 	border-radius: 2px;
 	cursor: pointer;
 	content: "";
-}
-.modal-form-check:checked + .modal-form-check-desc::before {
+} */
+/* .modal-form-check:checked + .modal-form-check-desc::before {
 	background-image: url(../images/click.svg);
 	background-color: var(--brand-color);
 	background-position: center;
 	background-repeat: no-repeat;
 	border: 1.25px solid var(--brand-color);
+} */
+
+/* .modal-form-check:focus + .modal-form-check-desc::before {
+	outline: 1.25px solid var(--brand-color);
+} */
+
+.modal-form-fake-checkbox {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 16px;
+	height: 16px;
+	border: 1.25px solid #2e2f42;
+	border-radius: 2px;
+	transition: background-color var(--transition-dur-and-func), border var(--transition-dur-and-func);
+}
+.agreed-icon {
+	opacity: 0;
+	transition: opacity var(--transition-dur-and-func);
 }
 
-.modal-form-check:focus + .modal-form-check-desc::before {
-	outline: 1.25px solid var(--brand-color);
+.modal-form-check:checked + .modal-form-check-desc .modal-form-fake-checkbox {
+	background-color: var(--brand-color);
+	border: 1.25px solid var(--brand-color);
+	outline: none;
+}
+.modal-form-check:checked + .modal-form-check-desc .agreed-icon {
+	opacity: 1;
 }
