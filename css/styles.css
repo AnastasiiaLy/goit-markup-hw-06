@@ -925,10 +925,12 @@ body {
 	margin-right: 24px;
 
 	border: 1px solid;
+	color: rgba(255, 255, 255, 0.6);
+
 	border-color: rgba(255, 255, 255, 0.3);
 	outline: none;
 	border-radius: 4px;
-	background-color: var(--maintext-color);
+	background-color: transparent;
 	transition: border-color var(--transition-dur-and-func);
 }
 
